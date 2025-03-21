@@ -69,7 +69,7 @@ require("./plugins/" + plugin);
 console.log('llw Plugins installed successful ✅')
 console.log('llw md connected to whatsapp ✅')
 
-let up = `llw md connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `⚡AA PATIYOO🙂LLW AWOO✅⚡OWNER OF LLW MD - 94705564619\n\nLLW MD PREFIX: ${prefix}`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/vm5scvzn/Untitled912131311121.jpg` }, caption: up })
 
