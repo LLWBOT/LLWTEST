@@ -59,14 +59,14 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('😼 Installing llw md... ')
+console.log('😚 Installing llw md... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('llw Plugins installed successful ✅')
+console.log('llw Plugins installed📌️')
 console.log('llw md connected to whatsapp ✅')
 
 let up = `⚡AA PATIYOO🙂LLW AWOO✅⚡OWNER OF LLW MD - 94705564619\n\nLLW MD PREFIX: ${prefix}`;
@@ -81,7 +81,7 @@ conn.ev.on('messages.upsert', async(mek) => {
 mek = mek.messages[0]
 if (!mek.message) return	
 mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
-if (mek.key && mek.key.remoteJid === 'status@broadcast') return
+if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.) return
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
 const content = JSON.stringify(mek.message)
