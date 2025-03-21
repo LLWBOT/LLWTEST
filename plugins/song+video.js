@@ -17,13 +17,14 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
- ⚡*LLW MD V1 SONG DOWNLOADER*⚡
+ ⚡ *LLW MD V1 SONG DOWNLOADER* ⚡
 
- title: ${data.title}
- description: ${data.description}
- time: ${data.timestamp}
- ago: ${data.ago}
- views: ${data.views}
+ 💠title: ${data.title}
+ 💠description: ${data.description}
+ 💠time: ${data.timestamp}
+ 💠ago: ${data.ago}
+ 💠views: ${data.views}
+ 💠url: ${data.url}
 
  *MADE BY LLW EDITZ*🗿
 `
