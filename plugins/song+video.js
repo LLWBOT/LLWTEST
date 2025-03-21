@@ -13,6 +13,23 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 if(!q) return reply("please provide the name of the music")
 const search = await yts(q)
+const data = search.videos[0];
+const url = data.url
+
+let desc = `
+ ⚡*LLW MD V1 SONG DOWNLOADER*⚡
+
+ title: ${data.title}
+ description: ${data.description}
+ time: ${data.timestamp}
+ ago: ${data.ago}
+ views: ${data.views}
+
+ *MADE BY LLW EDITZ*🗿
+`
+
+
+
 
 
 }catch(e){
