@@ -6,4 +6,6 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID,
+ALIVE_IMG: process.env.ALIVE_IMG || "https://i.postimg.cc/vm5scvzn/Untitled912131311121.jpg",
+ALIVE_MSG: process.env.ALIVE_MSG || "⚡LLW MD IS ALIVE.THANKS FOR USING LLW BOT🔥.CONTACT OWNER 94705564619",
 };
