@@ -4,7 +4,7 @@
   "description": "A Simple WhatsApp bot created by LLW EDITZ",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start queen.js --deep-monitoring --attach --name LLW_MD",
+    "start": "pm2 start LLW_MD --deep-monitoring --attach --name LLW_MD",
     "stop": "pm2 stop LLW_MD",
     "restart": "pm2 restart LLW_MD"
   },
