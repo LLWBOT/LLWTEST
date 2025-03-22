@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting llw md 🧬...");
+console.log("Connecting llw md ⚡...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -69,7 +69,7 @@ require("./plugins/" + plugin);
 console.log('llw Plugins installed📌️')
 console.log('llw md connected to whatsapp ✅')
 
-let up = `⚡AA PATIYOO🙂LLW AWOO✅⚡OWNER OF LLW MD - 94705564619\n\nLLW MD PREFIX: ${prefix}`;
+let up = `⚡ *LLW MD CONNECTED SUCCESS* ⚡   📩  *OWNER LLW* -\n\nLLW MD PREFIX: ${prefix} > LLW MD 2025 DEVELOPED BY LLW EDITZ`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/vm5scvzn/Untitled912131311121.jpg` }, caption: up })
 
