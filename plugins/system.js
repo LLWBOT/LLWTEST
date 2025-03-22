@@ -17,7 +17,7 @@ let status = `♻️ *LLW MD SYSTEM INFO* ♻️
 💠 *HOST:* ${os.hostname()}
 💠 *LLW MD OWNER:* LLW EDITZ🗣️
 💠 *CONTACT LLW:* 94705564619
-💠 *WHATSAPP CHANNEL:*https://whatsapp.com/channel/0029Vb0s10t6BIEm7YKTHm3R
+💠 *WHATSAPP CHANNEL:* https://whatsapp.com/channel/0029Vb0s10t6BIEm7YKTHm3R
 
 *LLW MD 2025*💫
 `
