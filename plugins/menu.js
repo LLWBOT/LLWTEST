@@ -75,3 +75,4 @@ await conn.sendMessage(from,{image:{url:"https://i.postimg.cc/vm5scvzn/Untitled9
 console.log(e)
 reply(`${e}`)
 }
+})
