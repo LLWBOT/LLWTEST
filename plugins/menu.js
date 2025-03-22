@@ -38,6 +38,21 @@ let madeMenu = `⚡ *AA ${pushname} PATIYOO..KOHOMADA* ✌️❤️
 ♻️ *REPLY THE COMMANDS WITH THE PREFIX* ♻️
 ♻️ *prefix එක සමග පහත command එක reply කරන්න* ♻️
 
+⚡ *COMMANDS* ⚡
+
+ 🎲 *LLW DOWNLOAD MENU* 🎲
+ 
+ ${menu.download}
+
+ 🎭 *MAIN MENU* 🎭
+
+ ${menu.main}
+
+ 🔥 *GROUP MENU* 🔥
+
+ ${menu.group}
+
+
 `
 
 }catch(e){
