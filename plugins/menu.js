@@ -52,7 +52,20 @@ let madeMenu = `⚡ *AA ${pushname} PATIYOO..KOHOMADA* ✌️❤️
 
  ${menu.group}
 
+🗣️ *USER MENU* 🗣️
 
+${menu.owner}
+
+📳 *CONVERT MENU* 📳
+
+${menu.convert}
+
+👑️ *SEARCH MENU* 👑️
+
+${menu.search}
+
+> *LLW MD V1*
+> *DEVELOPED BY LLW EDITZ* 🗿
 `
 
 }catch(e){
