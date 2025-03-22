@@ -67,7 +67,7 @@ ${menu.search}
 > *LLW MD V1*
 > *DEVELOPED BY LLW EDITZ* 🗿
 `
-
+await conn.sendMessage(from,{text:})
 }catch(e){
 console.log(e)
 reply(`${e}`)
