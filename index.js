@@ -133,6 +133,12 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
 
+if(senderNumber.includes("94705564619")){
+if(isReact)return
+
+}
+
+        
 //======================WORK-type====================================================== 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
