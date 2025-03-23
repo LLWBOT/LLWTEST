@@ -8,3 +8,7 @@ cmd({
     desc: "Check environment variables",
     category: "owner",
     filename: __filename,
+},
+async (conn, mek, m, { from, q, reply, isOwner }) => {
+    if (!isOwner) return;
+    
