@@ -12,6 +12,10 @@ cmd({
 async (conn, mek, m, { from, q, reply, isOwner }) => {
     if (!isOwner) return;
 
+        try {
+        // Check if the environment variable exists
+        const envVar = await EnvVar.findOne({ key: key });
+    
     if (!q) {
     const allEnvVars = await EnvVar.find({});
     const envList = allEnvVars.map(env => `${env.key}: ${env.value}`).join('\n');
