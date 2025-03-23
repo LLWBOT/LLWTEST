@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("llw Session downloaded ✅")
+console.log("llw Session downloaded ♻️")
 })})}
 
 const express = require("express");
@@ -39,6 +39,11 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
+//connect mongodb
+const connectDB = require('./lib/mongodb')
+connectDB();
+
+
 console.log("Connecting llw md ⚡...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
