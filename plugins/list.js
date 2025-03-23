@@ -41,6 +41,15 @@ let madeMenu = `🎲 *LLW MD COMMANDS LIST* 🎲
 .alive
 .system 
 
+> *LLW MD V1 2025*
+> *DEVELOPED BY LLW EDITZ *🗿
+`
+await conn.sendMessage(from,{image:{url:"https://i.postimg.cc/vm5scvzn/Untitled912131311121.jpg"},caption:madeMenu},{quoted:mek})
 
 
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
 })
