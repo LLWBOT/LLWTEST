@@ -25,12 +25,12 @@ menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
  }
 }
 
-let madeMenu = `⚡ *ආ ${pushname} පැටියෝ..කොහොමද..* ✌️❤️
+let madeMenu = `⚡ *ආ `${pushname}` පැටියෝ..කොහොමද..* ✌️❤️
 
 🌐 *DETAILS* 🌐
-📩 *BOT USER:* ${pushname}
+📩 *BOT USER:* `${pushname}`
 ☣️ *BOT NAME:* LLW MD
-🎲 *LLW MD VERSION:* ${packageJson.version}
+🎲 *LLW MD VERSION:* 1.0.0
 ♻️ *BOT OWNER:* LLW EDITZ
 👑️ *OWNER NUMBER:* 94705564619
 📌️ *LLW BOT REPO:* NOT RELEASED
