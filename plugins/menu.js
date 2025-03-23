@@ -24,14 +24,16 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
  }
 }
 
-let madeMenu = `⚡ *AA ${pushname} PATIYOO..KOHOMADA* ✌️❤️
+let madeMenu = `⚡ *ආ ${pushname} පැටියෝ..කොහොමද..* ✌️❤️
 
 🌐 *DETAILS* 🌐
 📩 *BOT USER:* ${pushname}
 ☣️ *BOT NAME:* LLW MD
+🎲 *LLW MD VERSION:* ${packageJson.version}
 ♻️ *BOT OWNER:* LLW EDITZ
 👑️ *OWNER NUMBER:* 94705564619
 📌️ *LLW BOT REPO:* NOT RELEASED
+🎭 *LLW BOT UPTIME:* ${runtime(process.uptime())}
 
 🌐 *LLW MD V1 BOT MENU* 🌐
 
