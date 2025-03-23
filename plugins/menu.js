@@ -34,7 +34,6 @@ let madeMenu = `⚡ *ආ ${pushname} පැටියෝ..කොහොමද..* �
 ♻️ *BOT OWNER:* LLW EDITZ
 👑️ *OWNER NUMBER:* 94705564619
 📌️ *LLW BOT REPO:* NOT RELEASED
-🎭 *LLW BOT UPTIME:* ${runtime(process.uptime())}
 
 🌐 *LLW MD V1 BOT MENU* 🌐
 
