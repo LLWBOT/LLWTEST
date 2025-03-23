@@ -10,7 +10,8 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, q, reply, isOwner }) => {
-    if (!isOwner) return
+    if (!isOwner) return;
+    
     // Find the position of the first colon or comma
     const colonIndex = q.indexOf(':');
     const commaIndex = q.indexOf(',');
