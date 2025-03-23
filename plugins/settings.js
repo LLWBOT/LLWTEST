@@ -16,12 +16,6 @@ async (conn, mek, m, { from, q, reply, isOwner }) => {
     const colonIndex = q.indexOf(':');
     const commaIndex = q.indexOf(',');
 
-    // Ensure we have a valid delimiter index
-    const delimiterIndex = colonIndex !== -1 ? colonIndex : commaIndex;
-    if (delimiterIndex === -1) {
-        return reply("⚠️️ *wrong command.please use:* `.update KEY:VALUE`");
-    }
-
     // Extract key and value
     const key = q.substring(0, delimiterIndex).trim();
     const value = q.substring(delimiterIndex + 1).trim();
