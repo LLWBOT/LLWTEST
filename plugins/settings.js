@@ -12,3 +12,10 @@ cmd({
 async (conn, mek, m, { from, q, reply, isOwner }) => {
     if (!isOwner) return;
     
+        if (!envVar) {
+            // If the variable does not exist, fetch and list all existing env vars
+            const allEnvVars = await EnvVar.find({});
+            const envList = allEnvVars.map(env => `${env.key}: ${env.value}`).join('\n');
+            return reply(`⚡ *LLW MD SETTINGS:*\n\n${envList}`);
+    }
+});
