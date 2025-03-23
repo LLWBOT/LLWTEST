@@ -12,8 +12,10 @@ cmd({
 async (conn, mek, m, { from, q, reply, isOwner }) => {
     if (!isOwner) return;
 
-        if (!q) {
-        return reply("⚠️️ *The command ${key} not found.*\n\n*Here are the existing environment variables:*\n\n${envList}");
+    if (!q) {
+    const allEnvVars = await EnvVar.find({});
+    const envList = allEnvVars.map(env => `${env.key}: ${env.value}`).join('\n');
+    return reply("⚠️️ *The command ${key} not found.*\n\n*Here are the existing environment variables:*\n\n${envList}");
         }
         
     const delimiterIndex = colonIndex !== -1 ? colonIndex : commaIndex;
