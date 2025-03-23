@@ -39,10 +39,10 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-//connect mongodb
+//=============connect mongodb==================
 const connectDB = require('./lib/mongodb')
 connectDB();
-
+//==================================================
 
 console.log("Connecting llw md ⚡...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
