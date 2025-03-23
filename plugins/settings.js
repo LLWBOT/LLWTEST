@@ -14,7 +14,7 @@ async (conn, mek, m, { from, q, reply, isOwner }) => {
     
         const delimiterIndex = colonIndex !== -1 ? colonIndex : commaIndex;
     if (delimiterIndex === -1) {
-        return reply(`⚠️️ *The command ${key} not found.*\n\n*Here are the existing environment variables:*\n\n${envList}`);
+        return reply("⚠️️ *The command ${key} not found.*\n\n*Here are the existing environment variables:*\n\n${envList}");
     } 
     
     // Find the position of the first colon or comma
