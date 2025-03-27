@@ -21,8 +21,8 @@ let status = `♻️ *LLW MD SYSTEM INFO* ♻️
 
 *LLW MD 2025*💫
 `
-return reply(`${status}`)
 await conn.sendMessage(from,{image:{url:"https://files.catbox.moe/egqzxo.jpg"},caption:status},{quoted:mek})
+return reply(`${status}`)
 
 
 }catch(e){
