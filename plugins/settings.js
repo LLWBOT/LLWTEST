@@ -1,18 +1,30 @@
-const config = require('../config')
+const {readEnv} = require('../lib/database')
 const {cmd , commands} = require('../command')
-const os = require("os")
-const {runtime} = require('../lib/functions')
+
 cmd({
     pattern: "settings",
-    alias: ["status","botinfo"],
+    desc: "get env list.",
     react: '⚙️',
-    desc: "check bot settings",
     category: "main",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let status = `〽️ *LLW MD V1 SETTINGS* 〽️
+const config = await readEnv();
+let menu = {
+main: '',
+download: '',
+ai:'',
+owner: '',
+};
+
+for (let i = 0; i < commands.length; i++) {
+if (commands[i].pattern && !commands[i].dontAddCommandList) {
+menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
+ }
+}
+
+let madeMenu = `〽️ *LLW MD V1 SETTINGS* 〽️
 
 *යටින් settings ටික බලාගන්න වෙනස් කරන්න ඕනෙ නම් .update setting එකේ තියෙන එක:ලකුන true or false...* 🔥
 
@@ -30,11 +42,12 @@ let status = `〽️ *LLW MD V1 SETTINGS* 〽️
 
 > *LLW MD V1 BY LLW EDITZ* 🗿
 `
-return reply(`${status}`)
+await conn.sendMessage(from,{image:{url:"https://files.catbox.moe/egqzxo.jpg"},caption:madeMenu},{quoted:mek})
+
+
 
 }catch(e){
 console.log(e)
 reply(`${e}`)
-
 }
 })
