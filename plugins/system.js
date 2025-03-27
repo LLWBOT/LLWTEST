@@ -20,7 +20,7 @@ let status = `📂 *LLW MD SYSTEM INFO* 📂
 
 📊 *HOST:* ${os.hostname()}
 
-📊 *LLW MD OWNER:* LLW EDITZ👩‍💻
+📊 *LLW MD OWNER:* LLW EDITZ🧑‍💻
 
 📊 *CONTACT LLW:* 94705564619
 
