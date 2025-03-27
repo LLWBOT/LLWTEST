@@ -27,6 +27,7 @@ menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
 let madeMenu = `〽️ *LLW MD V1 SETTINGS* 〽️
 
 *යටින් settings ටික බලාගන්න වෙනස් කරන්න ඕනෙ නම් .update setting එකේ තියෙන එක:ලකුන true or false...* 🔥
+*EXAMPLE:* ${config.PREFIX}update AUTO_REPLY:true හරි false හරි✅
 
 *PREFIX:* ${config.PREFIX}
 
