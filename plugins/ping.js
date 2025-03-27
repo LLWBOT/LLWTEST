@@ -15,7 +15,7 @@ try{
 let status = ` *PONG......* ✅
 
 
-*LLW MD V1 BY LLW* 🗿
+> *LLW MD V1 BY LLW* 🗿
 `
 return reply(`${status}`)
 
