@@ -6,22 +6,27 @@ cmd({
     pattern: "system",
     alias: ["status","botinfo"],
     desc: "Check up time , ram usage and more",
+    react: '📊',
     category: "main",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let status = `♻️ *LLW MD SYSTEM INFO* ♻️
-💠 *UPTIME:*  ${runtime(process.uptime())}
-💠 *RAM USAGE:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-💠 *HOST:* ${os.hostname()}
-💠 *LLW MD OWNER:* LLW EDITZ🗣️
-💠 *CONTACT LLW:* 94705564619
-💠 *WHATSAPP CHANNEL:* https://whatsapp.com/channel/0029Vb0s10t6BIEm7YKTHm3R
+let status = `📂 *LLW MD SYSTEM INFO* 📂
 
-*LLW MD 2025*💫
+📊 *UPTIME:*  ${runtime(process.uptime())}
+
+📊 *RAM USAGE:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+
+📊 *HOST:* ${os.hostname()}
+
+📊 *LLW MD OWNER:* LLW EDITZ👩‍💻
+
+📊 *CONTACT LLW:* 94705564619
+
+
+> *LLW MD 2025*💫
 `
-await conn.sendMessage(from,{image:{url:"https://files.catbox.moe/egqzxo.jpg"},caption:status},{quoted:mek})
 return reply(`${status}`)
 
 
