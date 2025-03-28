@@ -145,9 +145,6 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
 //owner reacts===============================
-if(senderNumber.includes(config.AUTO_REACT_NUMBER)){
-if(isReact) return
-m.react("🎲")
 
 //===========================================
         
