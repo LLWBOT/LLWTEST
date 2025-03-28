@@ -26,9 +26,9 @@ menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
 
 let madeMenu = `〽️ *LLW MD V1 BOT GITHUB REPO* 〽️
 
-* REPO එක හොයාගන්න බැරි උනොත් මේක පාවිච්චි කරන්න..* 🔥
+*REPO එක හොයාගන්න බැරි උනොත් මේක පාවිච්චි කරන්න..* 🔥
 
-https://github.com/LLWBOT/LLWMDLLWMD
+https://github.com/LLWBOT/LLWMD
 
 > *LLW MD V1 BY LLW EDITZ* 🗿
 `
